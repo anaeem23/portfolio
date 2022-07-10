@@ -1,15 +1,23 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
+import { useState } from "react";
 
 
 export default function Header () {
 
+    const [page, setPage] = useState("About")
+
     return (
         <>
+        <div className="bg-dark m-0 text-white">
+        <h1 className="fw-bold">Abeer Naeem</h1>
+        <h6 className="fw-lighter m-0">Software Developer</h6>
+        </div>
         <Nav 
-        varient="pills"
-        activeKey="/home"
-        onSelect={(key)=>{console.log(key)}}
+        className="bg-dark text-white"
+        variant="pills"
+        defaultActiveKey={'AboutMe'}
+        onSelect={(key)=>{setPage(key)}}
         >
             <Nav.Item>
                 <Nav.Link eventKey={'AboutMe'}> About Me</Nav.Link>
@@ -25,25 +33,6 @@ export default function Header () {
             </Nav.Item>
         </Nav>
 
-        <Nav
-  activeKey="/home"
-  onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
->
-  <Nav.Item>
-    <Nav.Link href="/home">Active</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-1">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-2">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Disabled
-    </Nav.Link>
-  </Nav.Item>
-</Nav>
 
         </>
     )
