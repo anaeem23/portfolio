@@ -1,11 +1,13 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import { useState } from "react";
+import Render from "./Body/index";
+import Footer from "./footer";
 
 
 export default function Header () {
 
-    const [page, setPage] = useState("About")
+    const [page, setPage] = useState("AboutMe")
 
     return (
         <>
@@ -26,13 +28,14 @@ export default function Header () {
                 <Nav.Link eventKey={'Portfolio'}> Portfolio</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey={'Resume'}> Resume</Nav.Link>
+                <Nav.Link eventKey={'Contact'}> Contact</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey={'Contact'}> Contact</Nav.Link>
+                <Nav.Link eventKey={'Resume'}> Resume</Nav.Link>
             </Nav.Item>
         </Nav>
 
+        <Render currentPage = {page} />
 
         </>
     )
