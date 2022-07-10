@@ -1,13 +1,17 @@
 import './App.css';
 import Header from "./components/header"
 import Footer from "./components/footer"
-import AboutMe from './components/Body/AboutMe';
+import { useState } from 'react';
+import Render from './components/Body';
 
 function App() {
+
+  const [page, setPage] = useState("AboutMe")
+
   return (
     <div className="App">
-     <Header />
-
+     <Header setPage={setPage}/>
+     <Render currentPage = {page} />
      <Footer />
     </div>
   );

@@ -5,12 +5,11 @@ import Render from "./Body/index";
 import Footer from "./footer";
 
 
-export default function Header () {
+export default function Header ({setPage}) {
 
-    const [page, setPage] = useState("AboutMe")
 
     return (
-        <>
+        <div className="bg-dark">
         <div className="bg-dark m-0 text-white">
         <h1 className="fw-bold">Abeer Naeem</h1>
         <h6 className="fw-lighter m-0">Software Developer</h6>
@@ -19,7 +18,8 @@ export default function Header () {
         className="bg-dark text-white"
         variant="pills"
         defaultActiveKey={'AboutMe'}
-        onSelect={(key)=>{setPage(key)}}
+        onSelect={(key)=>{setPage(key) 
+            console.log(key)}}
         >
             <Nav.Item>
                 <Nav.Link eventKey={'AboutMe'}> About Me</Nav.Link>
@@ -35,9 +35,8 @@ export default function Header () {
             </Nav.Item>
         </Nav>
 
-        <Render currentPage = {page} />
-
-        </>
+        </div>
     )
 
 }
+

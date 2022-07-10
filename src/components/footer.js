@@ -5,7 +5,7 @@ import { Nav } from "react-bootstrap";
 export default function Footer () {
 
     return (
-        <>
+        <div className="fixed-bottom">
         <Nav 
         className="bg-dark text-white"
         onSelect={(key)=>{console.log(key)}}
@@ -22,7 +22,7 @@ export default function Footer () {
         </Nav>
 
 
-        </>
+        </div>
     )
 
 }
