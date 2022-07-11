@@ -1,18 +1,20 @@
-import './App.css';
-import Header from "./components/header"
-import Footer from "./components/footer"
-import { useState } from 'react';
-import Render from './components/Body';
+import "./App.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import { useState } from "react";
+import Render from "./components/Body";
 
 function App() {
-
-  const [page, setPage] = useState("AboutMe")
+  const [page, setPage] = useState("AboutMe");
 
   return (
     <div className="App">
-     <Header setPage={setPage}/>
-     <Render currentPage = {page} />
-     <Footer />
+      <Header setPage={setPage} />
+
+      <div className="Body">
+        <Render currentPage={page} />
+      </div>
+      <Footer />
     </div>
   );
 }
