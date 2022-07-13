@@ -9,12 +9,15 @@ function App() {
 
   return (
     <div className="App">
+      <>
       <Header setPage={setPage} />
-
+</>
       <div className="Body">
         <Render currentPage={page} />
       </div>
+      <>
       <Footer />
+      </>
     </div>
   );
 }

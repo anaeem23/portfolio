@@ -9,7 +9,71 @@
 
 .Body {
   background-color: black;
+  margin: 60px;
+ 
   
 }
+
+.aboutMe {
+  font-size: 2rem;
+}
+
+.Name {
+  font-size: 5rem;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.titlePlus {
+  font-size: 6rem;
+  border-bottom: solid 2px white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ height: fit-content;
+ 
+}
+
+
+.input {
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 50%;
+}
+
+.skills {
+  font-size: 2rem;
+}
+
+@media (max-width:1000px)  {
+
+  .form {
+    width:100%;
+    font-size: 2rem;
+  }
+  .input {
+    height: 150px;
+  }
+  .textarea {
+    height: 300px;
+  }
+  .skills {
+    flex-direction: column;
+  }
+
+  .Nav {
+    font-size: 2rem;
+  }
+
+}
+
+  
 
 

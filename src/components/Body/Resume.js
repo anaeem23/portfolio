@@ -6,12 +6,12 @@ import ANresume from "../../Assets/Abeer_Naeem_Resume.pdf"
 export default function Resume() {
   return (
     <div>
-      <h1 className="text-white"> Skills</h1>
+      <h1 className="text-white titlePlus"> Skills</h1>
 
       <div class="container text-white">
-        <div class="row">
+        <div class="row skills">
           <div class="col">
-            <h4>HTML</h4>
+            <h4 className="title">HTML</h4>
             <ul style={{ listStyleType: "none" }}>
               <li>Basic/Advanced HTML</li>
               <li>jQuery</li>
@@ -19,7 +19,7 @@ export default function Resume() {
           </div>
           <div class="col">
             {" "}
-            <h4>CSS</h4>
+            <h4 className="title">CSS</h4>
             <ul style={{ listStyleType: "none" }}>
               <li>Bootstrap</li>
               <li>Tailwind</li>
@@ -29,7 +29,7 @@ export default function Resume() {
 
           <div class="col">
             {" "}
-            <h4>JavaScript</h4>
+            <h4 className="title">JavaScript</h4>
             <ul style={{ listStyleType: "none" }}>
               <li>Express.js</li>
               <li>React.js</li>
@@ -40,7 +40,7 @@ export default function Resume() {
 
           <div class="col">
             {" "}
-            <h4>DataBase </h4>
+            <h4 className="title">DataBase </h4>
             <ul style={{ listStyleType: "none" }}>
               <li>MySQL</li>
               <li>MongoDB</li>

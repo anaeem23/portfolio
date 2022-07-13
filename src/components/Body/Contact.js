@@ -38,15 +38,17 @@ export default function Contact() {
   }
 
   return (
-    <div className="h-100">
+    <div className="h-100 contact">
         <h1 className="text-white mb-5">You can Contact Me using the following form!</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="row justify-content-center form">
         <input
           placeholder="Name"
           name="name"
           type="text"
           value={form.name}
           onChange={handleChange}
+          className="input"
+
         ></input>
 
 <input
@@ -55,15 +57,29 @@ export default function Contact() {
           type="email"
           value={form.email}
           onChange={handleChange}
+          className="input"
         ></input>
 
-<input
+{/* <input
           placeholder="Message"
           name="message"
-          type="text"
+          type="textarea"
           value={form.message}
           onChange={handleChange}
-        ></input>
+          className="textarea"
+        ></input> */}
+
+        <textarea 
+        placeholder="Message"
+        name="message"
+        value={form.message}
+        onChange={handleChange}
+        className="input textarea"
+        rows={4}
+        cols={50}
+        >
+          
+        </textarea>
 
         <button
         type="submit"
