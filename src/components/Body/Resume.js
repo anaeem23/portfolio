@@ -1,4 +1,7 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+import ANresume from "../../Assets/Abeer_Naeem_Resume.pdf"
+
 
 export default function Resume() {
   return (
@@ -46,6 +49,8 @@ export default function Resume() {
           </div>
         </div>
       </div>
+      <Button variant="dark"><a href={ANresume} download="Abeer Naeem Resume" style={{textDecoration:'none'}}> Resume</a></Button>
+
     </div>
   );
 }

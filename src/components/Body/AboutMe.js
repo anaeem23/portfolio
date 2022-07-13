@@ -16,7 +16,7 @@ export default function AboutMe() {
           />
         </Figure>
 
-        <p className="text-white"> I am a recent graduate who is learing web development to increase my skills and understanding of web development. My undergrad was in Mechanical Engineering and I also possess a Master's in Mechanical & Aerospace. I hope to combine my knoweledge of Mechanical Engineering with Web Development to be valuable to any future employers</p>
+        <p className="text-white m-4"> I am a recent graduate who is learing web development to increase my skills and understanding of web development. My undergrad was in Mechanical Engineering and I also possess a Master's in Mechanical & Aerospace. I hope to combine my knoweledge of Mechanical Engineering with Web Development to be valuable to any future employers</p>
       </div>
     </>
   );

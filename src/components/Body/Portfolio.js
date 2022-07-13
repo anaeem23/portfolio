@@ -2,6 +2,7 @@ import React from "react";
 import  Card  from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Projects from "./Projects";
+import Resume from "../../Assets/Abeer_Naeem_Resume.pdf"
 
 export default function Portfolio() {
 
@@ -20,6 +21,7 @@ export default function Portfolio() {
 
       
       ))}
+
     </div>
   );
 }
