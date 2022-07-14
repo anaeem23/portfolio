@@ -59,7 +59,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 The Demo: https://anaeem23.github.io/portfolio/
 
-The walkthrough video: PENDING
+The walkthrough video: https://drive.google.com/file/d/153l6sch4qktDaGKzU_z-lAphSmOe-McT/view
 
 
 
