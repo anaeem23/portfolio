@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import validateEmail from "../../utils/emailValidation";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -7,9 +8,18 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [err, setErr] = useState('')
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name ==="email") {
+      if (!validateEmail(value)) {
+        setErr('Please enter valid email.') 
+      } else {
+        setErr('')
+      }
+    }
 
     setForm({
       ...form,
@@ -39,7 +49,7 @@ export default function Contact() {
 
   return (
     <div className="h-100 contact">
-        <h1 className="text-white mb-5">You can Contact Me using the following form!</h1>
+        <h1 className="text-white mb-5 ContactMe">You can Contact Me using the following form!</h1>
       <form onSubmit={handleSubmit} className="row justify-content-center form">
         <input
           placeholder="Name"
@@ -50,6 +60,8 @@ export default function Contact() {
           className="input"
 
         ></input>
+
+        <div className="text-white">{err}</div>
 
 <input
           placeholder="Email"

@@ -6,6 +6,16 @@ To create a portfolio using my new React skills, which will help set me apart fr
 
 The portfolio is deployed to GitHub Pages. You can find the link to it along with a walkthrough video in [Submissions](#submissions) 
 
+## Table of Contents
+
+* [Installation](#installation)
+* [User Story](#user-story)
+* [Acceptance Criteria](#acceptance-criteria)
+* [Submission](#submission)
+
+## Installation
+
+To run this locally, navigate to the root of the file and run `npm install` in the terminal. After, run `npm run start`. This is also hosted on Github Pages as well.
 
 ## User Story
 
@@ -45,76 +55,18 @@ WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
 
+## Submission 
+
+The Demo: https://anaeem23.github.io/portfolio/
+
+The walkthrough video: PENDING
 
 
 
 
 
-## Grading Requirements
 
-> **Note**: If a homework assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
-This homework is graded based on the following criteria:
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria plus the following:
 
-    * Application must use React to render content.
-
-    * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
-
-    * Application has a single `Project` component that’s used multiple times in the Portfolio section.
-
-    * Application has a single `Footer` component that appears on multiple pages.
-
-    * Application must be deployed to GitHub Pages.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
-- - -
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
