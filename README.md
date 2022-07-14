@@ -4,7 +4,7 @@
 
 To create a portfolio using my new React skills, which will help set me apart from other developers whose portfolios don’t use the latest technologies. 
 
-The portfolio is deployed to GitHub Pages. You can find the link to it along with a walkthrough video in [Submissions](#submissions) 
+The portfolio is deployed to GitHub Pages. You can find the link to it along with a walkthrough video in [Submissions](#submission) 
 
 ## Table of Contents
 
